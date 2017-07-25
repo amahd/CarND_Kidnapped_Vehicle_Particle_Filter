@@ -15,5 +15,5 @@ cd `dirname $0`
 # Compile code.
 mkdir -p build
 cd build
-cmake -G "Eclipse CDT4 - Unix Makefiles" ../src/
-make  -j `nproc` $*
+cmake ..
+make -j `nproc` $*
